@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Onyebuchi “Kosi” Ogbuli — An Imagined Future (circa 2066)</title>
+<meta name="description" content="A speculative, forward-imagined biography of Kosi Ogbuli, written as if from the year 2066. Aspiration, not record." />
+<style>
+  :root {
+    --paper: #efede4; --paper-2: #e6e3d8; --card: #f6f4ee;
+    --ink: #1a2421; --ink-soft: #3a4642; --muted: #6b7370; --line: #d4d0c3;
+    --brand: #12564e; --accent: #c6892f; --accent-ink: #8a5a17;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", Georgia, serif;
+    --sans: ui-sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+    --mono: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #101614; --paper-2: #0a0f0e; --card: #17201d; --ink: #e9e7dc; --ink-soft: #c3c6bd; --muted: #8b938e; --line: #2a3531; --brand: #64bcac; --accent: #d9a441; --accent-ink: #e6bb5f; }
+  }
+  :root[data-theme="light"] { --paper: #efede4; --paper-2: #e6e3d8; --card: #f6f4ee; --ink: #1a2421; --ink-soft: #3a4642; --muted: #6b7370; --line: #d4d0c3; --brand: #12564e; --accent: #c6892f; --accent-ink: #8a5a17; }
+  :root[data-theme="dark"] { --paper: #101614; --paper-2: #0a0f0e; --card: #17201d; --ink: #e9e7dc; --ink-soft: #c3c6bd; --muted: #8b938e; --line: #2a3531; --brand: #64bcac; --accent: #d9a441; --accent-ink: #e6bb5f; }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  a { color: var(--brand); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--brand) 30%, transparent); }
+  a:hover { border-color: var(--accent); }
+  .wrap { width: min(880px, 92vw); margin-inline: auto; }
+
+  /* Speculative banner */
+  .banner { background: color-mix(in srgb, var(--accent) 14%, var(--paper)); border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, var(--line)); }
+  .banner .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; padding: .9rem 0; }
+  .banner .pill { font-family: var(--mono); font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; color: var(--paper); background: var(--accent); padding: .28rem .55rem; border-radius: 2px; }
+  .banner p { margin: 0; font-size: .86rem; color: var(--ink-soft); }
+  .banner a.back { margin-left: auto; font-family: var(--mono); font-size: .72rem; letter-spacing: .04em; border: none; }
+
+  header.mast { border-bottom: 3px double var(--line); padding: clamp(2.5rem, 6vw, 4rem) 0 1.4rem; }
+  header.mast .kicker { font-family: var(--mono); font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 1rem; }
+  header.mast h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.05; letter-spacing: -.015em; margin: 0; }
+  header.mast .from { font-style: italic; color: var(--muted); margin: .6rem 0 0; font-family: var(--serif); font-size: 1.05rem; }
+
+  .layout { display: grid; grid-template-columns: 1fr 300px; gap: clamp(1.5rem, 4vw, 3rem); padding: 2.5rem 0 4rem; align-items: start; }
+  @media (max-width: 780px) { .layout { grid-template-columns: 1fr; } }
+
+  article h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; margin: 2.4rem 0 .3rem; padding-bottom: .4rem; border-bottom: 1px solid var(--line); letter-spacing: -.01em; }
+  article h2:first-child { margin-top: 0; }
+  article p { margin: 1rem 0; color: var(--ink); max-width: 68ch; }
+  article .lead { font-size: 1.08rem; }
+  article .lead b, article p b { font-weight: 600; }
+  article ul { margin: 1rem 0; padding-left: 1.3rem; }
+  article li { margin: .4rem 0; }
+
+  /* Infobox */
+  aside.infobox { background: var(--card); border: 1px solid var(--line); font-size: .84rem; position: sticky; top: 1rem; }
+  aside.infobox .ib-title { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; text-align: center; padding: .9rem 1rem; border-bottom: 1px solid var(--line); background: var(--paper-2); }
+  aside.infobox .ib-photo { display: grid; place-items: center; gap: .5rem; padding: 1.4rem 1rem; border-bottom: 1px solid var(--line); text-align: center; }
+  aside.infobox .ib-photo .seal { width: 88px; height: 88px; border-radius: 50%; border: 2px solid var(--accent); color: var(--accent-ink); display: grid; place-items: center; font-family: var(--serif); font-size: 2rem; font-weight: 600; background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
+  aside.infobox .ib-photo .cap { font-family: var(--mono); font-size: .64rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  aside.infobox dl { margin: 0; padding: .5rem 1rem 1rem; }
+  aside.infobox dt { font-family: var(--mono); font-size: .62rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: .8rem; }
+  aside.infobox dd { margin: .15rem 0 0; color: var(--ink); }
+
+  footer.pagefoot { border-top: 1px solid var(--line); background: var(--paper-2); }
+  footer.pagefoot .wrap { padding: 1.6rem 0; font-family: var(--mono); font-size: .68rem; letter-spacing: .04em; color: var(--muted); text-transform: uppercase; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; }
+  .disclaim { border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--line)); background: color-mix(in srgb, var(--accent) 8%, var(--paper)); padding: 1.2rem 1.4rem; margin: 2rem 0 0; font-size: .9rem; color: var(--ink-soft); }
+  .disclaim b { color: var(--accent-ink); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <div class="banner">
+    <div class="wrap">
+      <span class="pill">Speculative</span>
+      <p>An imagined future — written as if from circa 2066. Aspiration, not record.</p>
+      <a class="back" href="index.html">← Back to site</a>
+    </div>
+  </div>
+
+  <header class="mast"><div class="wrap">
+    <p class="kicker">From Wikipedia, the free encyclopedia — as it might read circa 2066</p>
+    <h1>Onyebuchi “Kosi” Ogbuli</h1>
+    <p class="from">American diplomat, corporate executive, Nobel Peace Prize laureate, author, and educator</p>
+  </div></header>
+
+  <div class="wrap layout">
+    <article>
+      <p class="lead"><b>Onyebuchi “Kosi” Ogbuli</b> (born 1998) is an American diplomat, corporate executive, Nobel Peace Prize laureate, author, and educator. He was awarded the 2058 Nobel Peace Prize for his role in negotiating the Accra Accords on artificial intelligence safety and for three decades of work advancing peaceful digital cooperation between the United States, African states, and the major technology powers. He served as United States Ambassador-at-Large for Cyberspace and Digital Policy from 2055 to 2058, following a nearly three-decade career at Cisco Systems, where he was Senior Vice President and Chief Government Affairs Officer from 2046 to 2054.</p>
+      <p>He is widely regarded as one of the architects of the “corporate statesman” model of technology diplomacy, in which senior industry policy executives move into formal diplomatic service. Since 2059 he has been Professor of the Practice of Technology Diplomacy at the Johns Hopkins School of Advanced International Studies (SAIS) and serves on several corporate and nonprofit boards.</p>
+
+      <h2>Early life and education</h2>
+      <p>Ogbuli was born to Nigerian immigrant parents and is of Igbo heritage. He was raised between Berkeley, California, and southeastern Nigeria, and speaks Igbo and English natively, along with French. He has cited his bicultural upbringing as formative to his later work on United States relations with African states.</p>
+      <p>He earned a Bachelor of Arts in political science and global health from the University of California, Los Angeles in 2020, where he received the Chancellor's Service Award. He went on to earn two master's degrees from Johns Hopkins SAIS in 2024 — a Master of Arts in international relations with concentrations in technology and African affairs, and a Master of Arts in economics — graduating magna cum laude, and serving as student body president. He completed an MBA at the UCLA Anderson School of Management in 2027, where he was a Consortium Fellow, a Riordan Fellow, and a Golub Capital Board Fellow.</p>
+
+      <h2>Early career (2020–2026)</h2>
+      <p>Ogbuli began his career as an editor and policy analyst at the Economist Intelligence Unit from 2020 to 2022, advising Fortune 500 clients on emerging digital markets. He served as a policy fellow in digital trade at the Information Technology Industry Council from 2023 to 2024, coordinating a coalition of technology associations during the modernization of the USMCA's data-flow provisions.</p>
+      <p>From 2024 to 2025 he was an Africa analyst at the Congressional Research Service, covering the digital economy and energy transition across 27 African countries and supporting congressional delegations that produced several bilateral trade agreements. Analysts later pointed to this period as the origin of his signature policy focus: the intersection of AI governance, digital trade, and digital infrastructure across the global periphery.</p>
+
+      <h2>Cisco Systems (2026–2054)</h2>
+      <p>Ogbuli joined Cisco Systems in 2026 as a FLEX Rising Leaders intern in State Government Affairs, working on right-to-repair legislation, and returned after business school to the company's rotational leadership program. His rotations spanned state government affairs, the Country Digital Acceleration program's Africa portfolio, and federal government affairs, where he carried an international digital trade file.</p>
+      <p>He rose through director roles in the early 2030s, becoming known for coalition-led campaigns on cybersecurity, AI regulation, and supply-chain policy. From 2033 to 2035 he took a leave to serve in the United States Department of State's Bureau of Cyberspace and Digital Policy — a Senate-confirmed posting that later became a template for industry-government talent exchange. He returned to Cisco in 2035 with government-side credibility that accelerated his rise, and was promoted to vice president the following year.</p>
+      <p>In 2046 Ogbuli was named Senior Vice President and Chief Government Affairs Officer, leading Cisco's policy engagement across six continents. His tenure coincided with the second generation of international AI governance frameworks, in which he was a prominent industry negotiator. During this period he published his first book, <i>The Diplomacy of Code</i> (2050), which became a standard text in public policy programs. He retired from Cisco in 2054 after 28 years.</p>
+
+      <h2>Diplomatic career (2055–2058)</h2>
+      <p>In 2055 Ogbuli was confirmed as United States Ambassador-at-Large for Cyberspace and Digital Policy. As ambassador he led United States delegations on AI safety accords and expanded the Digital Partnership frameworks with the African Union, drawing on relationships built over three decades of United States–Africa technology work. His confirmation was noted for its bipartisan support, attributed to a public record he had kept factual and nonpartisan since his time as a congressional analyst.</p>
+
+      <h2>Nobel Peace Prize</h2>
+      <p>Ogbuli was awarded the Nobel Peace Prize in 2058. The Norwegian Nobel Committee cited his leadership of the negotiations that produced the Accra Accords — the first binding multilateral framework on AI safety and military restraint to include the United States, the major technology powers, and the African Union as equal signatories — and his decades of work “building durable channels of digital cooperation where confrontation had seemed inevitable.”</p>
+      <p>He was among the first laureates recognized primarily for technology diplomacy, and the first Nigerian American laureate. In his Nobel lecture, delivered partly in Igbo, he argued that the governance of intelligent machines was “the peace question of our century.” He directed the prize money to a fellowship for African-diaspora policy students that he later formally endowed.</p>
+
+      <h2>Later career: boards, teaching, and philanthropy</h2>
+      <p>Since leaving government, Ogbuli has served on the boards of several public technology and infrastructure companies and on institutional governing boards. In 2059 he was appointed Professor of the Practice of Technology Diplomacy at Johns Hopkins SAIS, and also lectures at UCLA Anderson. His second book, <i>Between Capitals</i> (2061), a memoir of his diplomatic service, was shortlisted for several nonfiction prizes. In 2060 he endowed the Ogbuli Fellowship, supporting Black and African-diaspora graduate students entering technology policy careers.</p>
+
+      <h2>Recognition</h2>
+      <p>In addition to the 2058 Nobel Peace Prize, Ogbuli is a Henry Crown Fellow of the Aspen Institute, a member of the Council on Foreign Relations, and a Marshall Memorial Fellow of the German Marshall Fund, and has received honorary doctorates for contributions to technology diplomacy and United States–Africa relations.</p>
+
+      <h2>Personal life</h2>
+      <p>Ogbuli is Nigerian American and has maintained close ties to Nigeria throughout his life. He is a longtime vegetarian and a lifelong practitioner of strength and conditioning training. His interests include rare-book collecting, political biography, anime, cooking, tea, and fashion. He splits his time between the San Francisco Bay Area and Washington, D.C.</p>
+
+      <h2>Selected works</h2>
+      <ul>
+        <li><i>The Diplomacy of Code: Power, Policy, and the Machines Between Nations</i> (2050)</li>
+        <li><i>Between Capitals: A Memoir of Technology and Statecraft</i> (2061)</li>
+      </ul>
+
+      <div class="disclaim">
+        <b>A note.</b> This page is a deliberate work of imagination — a future written backward from a plan. The birth year, the Accra Accords, the book titles, the prizes, and the fellowship name are placeholders. Every date maps to Life Plan v2026.11: rotations 2027–2030, a government stint 2033–2035, CGAO 2046–2054, ambassador 2055–2058, and boards and teaching from 2058 onward. It is aspiration made concrete, not a record of anything that has happened.
+      </div>
+    </article>
+
+    <aside class="infobox">
+      <div class="ib-title">Onyebuchi “Kosi” Ogbuli</div>
+      <div class="ib-photo">
+        <div class="seal">KO</div>
+        <span class="cap">Ambassador-at-Large · Nobel Laureate</span>
+      </div>
+      <dl>
+        <dt>Born</dt><dd>1998</dd>
+        <dt>Nationality</dt><dd>Nigerian American</dd>
+        <dt>Education</dt><dd>UCLA (BA) · Johns Hopkins SAIS (MA, MA) · UCLA Anderson (MBA)</dd>
+        <dt>Known for</dt><dd>Technology diplomacy · the Accra Accords on AI safety</dd>
+        <dt>Title</dt><dd>U.S. Ambassador-at-Large for Cyberspace &amp; Digital Policy (2055–2058)</dd>
+        <dt>Employer</dt><dd>Cisco Systems (2026–2054), SVP &amp; CGAO</dd>
+        <dt>Awards</dt><dd>Nobel Peace Prize (2058)</dd>
+        <dt>Languages</dt><dd>English · Igbo · French</dd>
+      </dl>
+    </aside>
+  </div>
+
+  <footer class="pagefoot"><div class="wrap">
+    <span>An imagined future · circa 2066</span>
+    <span>Speculative — not a factual record</span>
+  </div></footer>
+
+<script>
+  // Inherit theme choice if the visitor set one on the main site (same origin, best-effort).
+  try {
+    var t = localStorage.getItem('ko-theme');
+    if (t) document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+</body>
+</html>

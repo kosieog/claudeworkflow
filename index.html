@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kosi Ogbuli — Strategy, Policy &amp; Technology</title>
-<meta name="description" content="Onyebuchi (Kosi) Ogbuli — strategist and policy analyst working at the intersection of digital economy, energy transition, and global markets, with a focus on U.S.–Africa." />
+<title>Kosi Ogbuli — Strategy, Policy &amp; Technology Diplomacy</title>
+<meta name="description" content="Onyebuchi (Kosi) Ogbuli — strategist and aspiring technology diplomat working on AI governance, digital trade, cybersecurity, and U.S.–Africa digital cooperation." />
 <style>
   :root {
     --paper: #efede4;
@@ -18,52 +18,35 @@
     --brand-deep: #0d3f39;
     --accent: #c6892f;
     --accent-ink: #8a5a17;
-    --shadow: 26, 36, 33;
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", Georgia, serif;
     --sans: ui-sans-serif, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
     --mono: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --paper: #101614;
-      --paper-2: #0a0f0e;
-      --card: #17201d;
-      --ink: #e9e7dc;
-      --ink-soft: #c3c6bd;
-      --muted: #8b938e;
-      --line: #2a3531;
-      --brand: #64bcac;
-      --brand-deep: #8fd6c7;
-      --accent: #d9a441;
-      --accent-ink: #e6bb5f;
-      --shadow: 0, 0, 0;
+      --paper: #101614; --paper-2: #0a0f0e; --card: #17201d;
+      --ink: #e9e7dc; --ink-soft: #c3c6bd; --muted: #8b938e; --line: #2a3531;
+      --brand: #64bcac; --brand-deep: #8fd6c7; --accent: #d9a441; --accent-ink: #e6bb5f;
     }
   }
   :root[data-theme="light"] {
     --paper: #efede4; --paper-2: #e6e3d8; --card: #f6f4ee;
     --ink: #1a2421; --ink-soft: #3a4642; --muted: #6b7370; --line: #d4d0c3;
     --brand: #12564e; --brand-deep: #0d3f39; --accent: #c6892f; --accent-ink: #8a5a17;
-    --shadow: 26, 36, 33;
   }
   :root[data-theme="dark"] {
     --paper: #101614; --paper-2: #0a0f0e; --card: #17201d;
     --ink: #e9e7dc; --ink-soft: #c3c6bd; --muted: #8b938e; --line: #2a3531;
     --brand: #64bcac; --brand-deep: #8fd6c7; --accent: #d9a441; --accent-ink: #e6bb5f;
-    --shadow: 0, 0, 0;
   }
 
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font-family: var(--sans);
-    font-size: 17px;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.65;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   }
   .wrap { width: min(1080px, 92vw); margin-inline: auto; }
   a { color: inherit; }
@@ -78,9 +61,9 @@
   .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 60px; }
   .nav-name { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; letter-spacing: .01em; }
   .nav-name b { color: var(--brand); font-style: italic; font-weight: 600; }
-  .nav-links { display: flex; align-items: center; gap: 1.4rem; }
+  .nav-links { display: flex; align-items: center; gap: 1.3rem; }
   .nav-links a {
-    font-family: var(--mono); font-size: .74rem; letter-spacing: .08em; text-transform: uppercase;
+    font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
     text-decoration: none; color: var(--muted); transition: color .2s;
   }
   .nav-links a:hover { color: var(--ink); }
@@ -95,11 +78,11 @@
     padding: .38rem .55rem; border-radius: 2px; cursor: pointer; transition: all .2s;
   }
   .theme-toggle:hover { color: var(--ink); border-color: var(--muted); }
-  @media (max-width: 720px) { .nav-links .navlink { display: none; } }
+  @media (max-width: 860px) { .nav-links .navlink { display: none; } }
 
   /* ---------- Hero ---------- */
   .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
-  #iso { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; opacity: .9; }
+  #iso { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
   .hero .wrap { position: relative; z-index: 1; padding: clamp(3.5rem, 9vw, 7rem) 0 clamp(2rem, 5vw, 3.5rem); }
   .eyebrow {
     font-family: var(--mono); font-size: .78rem; letter-spacing: .22em; text-transform: uppercase;
@@ -108,13 +91,12 @@
   .eyebrow::before { content: ""; width: 34px; height: 1px; background: var(--accent); display: inline-block; }
   h1 {
     font-family: var(--serif); font-weight: 600; margin: 0;
-    font-size: clamp(2.6rem, 7.5vw, 5rem); line-height: 1.02; letter-spacing: -.015em;
-    text-wrap: balance;
+    font-size: clamp(2.6rem, 7.5vw, 5rem); line-height: 1.02; letter-spacing: -.015em; text-wrap: balance;
   }
   h1 .k { color: var(--brand); font-style: italic; }
   .lede {
-    font-family: var(--serif); font-size: clamp(1.2rem, 2.6vw, 1.6rem); line-height: 1.42;
-    color: var(--ink-soft); max-width: 30ch; margin: 1.5rem 0 0; text-wrap: pretty;
+    font-family: var(--serif); font-size: clamp(1.2rem, 2.6vw, 1.55rem); line-height: 1.44;
+    color: var(--ink-soft); max-width: 34ch; margin: 1.5rem 0 0; text-wrap: pretty;
   }
   .contact-line {
     font-family: var(--mono); font-size: .8rem; color: var(--muted); margin-top: 2rem;
@@ -127,10 +109,7 @@
   .stats { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--line); background: var(--paper-2); }
   .stat { padding: 1.6rem clamp(.9rem, 2.5vw, 2rem); border-left: 1px solid var(--line); }
   .stat:first-child { border-left: none; }
-  .stat .num {
-    font-family: var(--serif); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.5rem);
-    color: var(--brand); line-height: 1; font-variant-numeric: tabular-nums;
-  }
+  .stat .num { font-family: var(--serif); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.5rem); color: var(--brand); line-height: 1; font-variant-numeric: tabular-nums; }
   .stat .lab { font-family: var(--mono); font-size: .68rem; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-top: .6rem; line-height: 1.4; }
   @media (max-width: 720px) {
     .stats { grid-template-columns: repeat(2, 1fr); }
@@ -139,22 +118,52 @@
   }
 
   /* ---------- Section scaffolding ---------- */
-  section { padding: clamp(3.5rem, 8vw, 6rem) 0; }
-  .sec-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.6rem; }
+  section { padding: clamp(3.2rem, 7vw, 5.5rem) 0; }
+  .band { background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .sec-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.4rem; }
   .sec-num { font-family: var(--mono); font-size: .78rem; color: var(--accent-ink); letter-spacing: .1em; }
   .sec-title { font-family: var(--serif); font-size: clamp(1.5rem, 3.4vw, 2.1rem); font-weight: 600; margin: 0; letter-spacing: -.01em; }
   .sec-rule { flex: 1; height: 1px; background: var(--line); align-self: center; }
+  .sec-note { font-family: var(--mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 
-  .brief p {
-    font-family: var(--serif); font-size: clamp(1.25rem, 2.8vw, 1.75rem); line-height: 1.5;
-    max-width: 32ch; margin: 0; color: var(--ink);
-  }
-  .brief .grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: start; }
-  .brief .side { color: var(--ink-soft); font-size: 1rem; line-height: 1.7; max-width: 42ch; }
-  .brief .side p { font-family: var(--sans); font-size: 1rem; line-height: 1.7; max-width: none; color: var(--ink-soft); }
-  @media (max-width: 720px) { .brief .grid { grid-template-columns: 1fr; } }
+  /* ---------- Vision ---------- */
+  .vision-lead { font-family: var(--serif); font-size: clamp(1.5rem, 3.6vw, 2.4rem); line-height: 1.32; margin: 0; max-width: 24ch; letter-spacing: -.01em; text-wrap: balance; }
+  .vision-lead .hl { color: var(--brand); }
+  .vision-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: start; margin-top: 1.5rem; }
+  .vision-grid .side p { color: var(--ink-soft); font-size: 1rem; line-height: 1.72; margin: 0 0 1rem; max-width: 46ch; }
+  .vision-grid .side p:last-child { margin-bottom: 0; }
+  .archetype { margin-top: 2.4rem; border: 1px solid var(--line); border-left: 3px solid var(--accent); background: var(--card); padding: 1.5rem clamp(1.2rem, 3vw, 2rem); }
+  .archetype .lab { font-family: var(--mono); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 .6rem; }
+  .archetype p { margin: 0; font-family: var(--serif); font-size: 1.15rem; line-height: 1.5; color: var(--ink); }
+  .archetype .names { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+  .archetype .names span { font-family: var(--mono); font-size: .72rem; letter-spacing: .04em; color: var(--muted); padding: .28rem .6rem; border: 1px solid var(--line); border-radius: 2px; }
+  @media (max-width: 760px) { .vision-grid { grid-template-columns: 1fr; } }
 
-  /* ---------- Experience ledger ---------- */
+  /* ---------- Focus ---------- */
+  .focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .focus { background: var(--card); border: 1px solid var(--line); padding: 1.5rem; display: flex; flex-direction: column; gap: .55rem; }
+  .focus .tag { font-family: var(--mono); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; color: var(--paper); background: var(--brand); align-self: flex-start; padding: .2rem .5rem; border-radius: 2px; }
+  .focus .tag.diff { background: var(--accent); }
+  .focus h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; margin: .2rem 0 0; line-height: 1.15; }
+  .focus p { margin: 0; color: var(--ink-soft); font-size: .95rem; line-height: 1.6; }
+  @media (max-width: 820px) { .focus-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 540px) { .focus-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- The Arc (timeline) ---------- */
+  .arc-item { display: grid; grid-template-columns: 92px 1fr; gap: clamp(1rem, 3vw, 2rem); }
+  .arc-when { font-family: var(--mono); font-size: .78rem; color: var(--accent-ink); text-align: right; padding-top: .1rem; font-variant-numeric: tabular-nums; }
+  .arc-body { border-left: 2px solid var(--line); padding: 0 0 2.2rem 1.8rem; position: relative; }
+  .arc-item:last-child .arc-body { padding-bottom: .2rem; }
+  .arc-body::before { content: ""; position: absolute; left: -8px; top: .15rem; width: 12px; height: 12px; border-radius: 50%; background: var(--paper); border: 2px solid var(--brand); }
+  .arc-item.dest .arc-body::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent); }
+  .arc-phase { font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .arc-title { font-family: var(--serif); font-size: 1.28rem; font-weight: 600; margin: .25rem 0 .35rem; line-height: 1.2; }
+  .arc-item.dest .arc-title { color: var(--brand); }
+  .arc-focus { color: var(--ink-soft); font-size: .96rem; line-height: 1.55; margin: 0; max-width: 58ch; }
+  .arc-comp { display: inline-block; margin-top: .7rem; font-family: var(--mono); font-size: .72rem; letter-spacing: .03em; color: var(--ink-soft); border: 1px solid var(--line); border-radius: 2px; padding: .22rem .55rem; }
+  @media (max-width: 560px) { .arc-item { grid-template-columns: 68px 1fr; gap: .9rem; } .arc-when { font-size: .72rem; } }
+
+  /* ---------- Experience ---------- */
   .role { display: grid; grid-template-columns: 200px 1fr; gap: clamp(1rem, 3vw, 3rem); padding: 2.2rem 0; border-top: 1px solid var(--line); }
   .role:last-child { border-bottom: 1px solid var(--line); }
   .role .meta { display: flex; flex-direction: column; gap: .35rem; }
@@ -169,13 +178,54 @@
   .role li b { color: var(--ink); font-weight: 600; }
   @media (max-width: 720px) { .role { grid-template-columns: 1fr; gap: .8rem; } }
 
+  /* ---------- Landing zones ---------- */
+  .zones { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .zone { background: var(--card); border: 1px solid var(--line); border-top: 3px solid var(--brand); padding: 1.5rem; display: flex; flex-direction: column; gap: .5rem; }
+  .zone.primary { border-top-color: var(--accent); }
+  .zone .zhead { display: flex; align-items: center; gap: .8rem; }
+  .zone .badge { font-family: var(--mono); font-weight: 600; font-size: .82rem; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; color: var(--brand); border: 1.5px solid var(--brand); flex: none; }
+  .zone.primary .badge { color: var(--accent-ink); border-color: var(--accent); }
+  .zone .ztitle { font-family: var(--serif); font-size: 1.12rem; font-weight: 600; line-height: 1.2; }
+  .zone .zwindow { font-family: var(--mono); font-size: .7rem; letter-spacing: .04em; color: var(--muted); text-transform: uppercase; }
+  .zone .zdesc { color: var(--ink-soft); font-size: .92rem; line-height: 1.55; margin: 0; }
+  .zone .ztag { margin-top: auto; align-self: flex-start; font-family: var(--mono); font-size: .64rem; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); background: var(--paper); border: 1px solid var(--line); border-radius: 2px; padding: .24rem .55rem; }
+  .zone.primary .ztag { color: var(--accent-ink); border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+  @media (max-width: 700px) { .zones { grid-template-columns: 1fr; } }
+
+  /* ---------- Encore ---------- */
+  .encore-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .track { background: var(--card); border: 1px solid var(--line); padding: 1.6rem; display: flex; flex-direction: column; gap: .7rem; }
+  .track .tnum { font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); }
+  .track h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; margin: 0; line-height: 1.2; }
+  .track .twhen { font-family: var(--mono); font-size: .72rem; color: var(--muted); }
+  .track p { margin: 0; color: var(--ink-soft); font-size: .93rem; line-height: 1.6; }
+  @media (max-width: 820px) { .encore-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- Roadmap table ---------- */
+  .roadmap-wrap { overflow-x: auto; border: 1px solid var(--line); }
+  table.roadmap { width: 100%; border-collapse: collapse; min-width: 640px; background: var(--card); }
+  table.roadmap th, table.roadmap td { text-align: left; padding: 1rem 1.2rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.roadmap thead th { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--paper-2); }
+  table.roadmap tbody tr:last-child td { border-bottom: none; }
+  table.roadmap .skill { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--ink); white-space: nowrap; }
+  table.roadmap td.how { color: var(--ink-soft); font-size: .92rem; line-height: 1.5; }
+  table.roadmap td.proof { font-family: var(--mono); font-size: .76rem; color: var(--brand); white-space: nowrap; }
+  .tshape { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.4rem; }
+  .tshape .depth, .tshape .breadth { font-family: var(--mono); font-size: .72rem; letter-spacing: .03em; padding: .3rem .6rem; border-radius: 2px; }
+  .tshape .depth { color: var(--paper); background: var(--brand); }
+  .tshape .breadth { color: var(--ink-soft); border: 1px solid var(--line); }
+
+  /* ---------- Network ---------- */
+  .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .tier { border: 1px solid var(--line); background: var(--card); padding: 1.4rem; display: grid; grid-template-columns: auto 1fr; gap: .3rem 1rem; }
+  .tier .tl { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; color: var(--accent); grid-row: span 2; line-height: 1; }
+  .tier .tname { font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); align-self: center; }
+  .tier .tdesc { color: var(--ink-soft); font-size: .9rem; line-height: 1.55; grid-column: 2; }
+  @media (max-width: 700px) { .tiers { grid-template-columns: 1fr; } }
+
   /* ---------- Education ---------- */
   .edu-grid { display: grid; gap: 1.1rem; }
-  .edu {
-    display: grid; grid-template-columns: 1fr auto; gap: .4rem 1.5rem;
-    background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--brand);
-    padding: 1.6rem clamp(1.2rem, 3vw, 2rem);
-  }
+  .edu { display: grid; grid-template-columns: 1fr auto; gap: .4rem 1.5rem; background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--brand); padding: 1.6rem clamp(1.2rem, 3vw, 2rem); }
   .edu .school { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; margin: 0; line-height: 1.2; }
   .edu .degree { color: var(--ink-soft); margin: .35rem 0 0; font-size: 1rem; }
   .edu .when { font-family: var(--mono); font-size: .76rem; color: var(--accent-ink); text-align: right; white-space: nowrap; }
@@ -183,12 +233,9 @@
   .edu .notes { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--line); }
   .edu .note { font-size: .84rem; color: var(--ink-soft); }
   .edu .note span { font-family: var(--mono); font-size: .64rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: .15rem; }
-  @media (max-width: 640px) {
-    .edu { grid-template-columns: 1fr; }
-    .edu .when, .edu .where { text-align: left; }
-  }
+  @media (max-width: 640px) { .edu { grid-template-columns: 1fr; } .edu .when, .edu .where { text-align: left; } }
 
-  /* ---------- Capabilities ---------- */
+  /* ---------- Anchors / capabilities ---------- */
   .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
   .cap { background: var(--card); border: 1px solid var(--line); padding: 1.6rem; }
   .cap h3 { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 1.1rem; }
@@ -199,6 +246,17 @@
   .lang .name { font-size: .95rem; }
   .lang .level { font-family: var(--mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   @media (max-width: 820px) { .cap-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- Principles / values ---------- */
+  .pv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 5vw, 3.5rem); }
+  .pv h3 { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 1.3rem; }
+  .pv ol, .pv ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 1.1rem; counter-reset: pv; }
+  .pv li { position: relative; padding-left: 2.4rem; color: var(--ink-soft); line-height: 1.55; }
+  .pv li b { color: var(--ink); font-weight: 600; display: block; font-family: var(--serif); font-size: 1.08rem; margin-bottom: .1rem; }
+  .pv.principles li { counter-increment: pv; }
+  .pv.principles li::before { content: counter(pv, decimal-leading-zero); position: absolute; left: 0; top: .05rem; font-family: var(--mono); font-size: .8rem; color: var(--accent); }
+  .pv.values li::before { content: ""; position: absolute; left: .3rem; top: .55em; width: 8px; height: 8px; background: var(--brand); transform: rotate(45deg); }
+  @media (max-width: 700px) { .pv-grid { grid-template-columns: 1fr; } }
 
   /* ---------- Footer ---------- */
   footer { border-top: 1px solid var(--line); background: var(--paper-2); }
@@ -211,13 +269,11 @@
   .foot-links a .arw { color: var(--accent); }
   .colophon { border-top: 1px solid var(--line); }
   .colophon .wrap { padding: 1.4rem 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; font-family: var(--mono); font-size: .68rem; letter-spacing: .05em; color: var(--muted); text-transform: uppercase; }
-  @media (max-width: 640px) { .foot { grid-template-columns: 1fr; align-items: start; } }
 
   /* ---------- Reveal ---------- */
   .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
   .reveal.in { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
-
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 1px; }
 </style>
 </head>
@@ -226,9 +282,10 @@
     <div class="wrap">
       <div class="nav-name">Kosi <b>Ogbuli</b></div>
       <div class="nav-links">
+        <a class="navlink" href="#vision">Vision</a>
+        <a class="navlink" href="#trajectory">Trajectory</a>
         <a class="navlink" href="#experience">Experience</a>
-        <a class="navlink" href="#education">Education</a>
-        <a class="navlink" href="#capabilities">Capabilities</a>
+        <a class="navlink" href="#roadmap">Roadmap</a>
         <a class="cta" href="mailto:kosi.ogbuli.2027@anderson.ucla.edu">Get in touch</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">Theme</button>
       </div>
@@ -238,9 +295,9 @@
   <header class="hero">
     <canvas id="iso" aria-hidden="true"></canvas>
     <div class="wrap">
-      <p class="eyebrow">Strategy · Policy · Technology</p>
+      <p class="eyebrow">Strategy · Policy · Technology Diplomacy</p>
       <h1>Onyebuchi <span class="k">(Kosi)</span> Ogbuli</h1>
-      <p class="lede">Turning complex digital-economy and energy questions into strategy that moves markets and policy.</p>
+      <p class="lede">Building a career at the intersection of AI governance, digital trade, and U.S.–Africa cooperation — the long road from corporate government affairs to the negotiating table.</p>
       <div class="contact-line">
         <a href="tel:+14155746134">(415) 574-6134</a>
         <span aria-hidden="true">·</span>
@@ -258,42 +315,92 @@
     <div class="stat"><div class="num">$25M+</div><div class="lab">Corporate investment decisions informed</div></div>
   </div>
 
-  <main class="wrap">
-    <section class="brief reveal" id="about">
-      <div class="grid">
-        <p>Strategist and policy analyst working where the digital economy, energy transition, and global markets converge.</p>
-        <div class="side">
-          <p>An MBA candidate at UCLA Anderson with dual master's degrees from Johns Hopkins SAIS, I've spent my career translating technical complexity into decisions leaders can act on — advising Fortune 500 companies at The Economist Intelligence Unit and ITI, and directing U.S.–Africa digital and energy strategy for the Congressional Research Service. My focus sits at the seam of technology, geopolitics, and capital, with a particular commitment to Africa's digital future.</p>
+  <main>
+    <!-- VISION -->
+    <section id="vision" class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">North Star</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">The corporate statesman</span>
+      </div>
+      <div class="reveal">
+        <p class="vision-lead">Chief Government Affairs Officer of a major global technology company — and then <span class="hl">the encore</span>: ambassador, boards, and the classroom.</p>
+        <div class="vision-grid">
+          <div class="side">
+            <p>The destination is chief of government affairs at a global technology company — most likely Cisco SVP Government Affairs — leading policy engagement across six continents on AI governance, cybersecurity, digital trade, and digital infrastructure. Hold it six to ten years, then exit corporate life in the mid-to-late 50s.</p>
+            <p>After that, three tracks run in sequence and then in parallel: a diplomatic appointment as ambassador, a portfolio of corporate and nonprofit boards, and teaching as a professor of practice. The influence of high office, without a ballot — built through a quarter century of substantive credibility rather than a campaign.</p>
+          </div>
+          <div class="archetype">
+            <p class="lab">The archetype</p>
+            <p>Build durable credibility inside a global company, then convert it into diplomatic service, governance, and teaching. No ballot required.</p>
+            <div class="names">
+              <span>Brad Smith</span><span>Chris Padilla</span><span>Hank Paulson</span><span>Bob Gates</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="experience">
+    <!-- FOCUS -->
+    <section id="focus" class="band"><div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-num">01</span>
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">Focus Areas</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">T-shaped</span>
+      </div>
+      <div class="focus-grid">
+        <article class="focus reveal"><span class="tag">Depth</span><h3>AI Governance</h3><p>The substantive thread through every phase — from state AI policy to federal frameworks to multilateral engagement on the governance of intelligent machines.</p></article>
+        <article class="focus reveal"><span class="tag">Depth</span><h3>Digital Trade</h3><p>Cross-border data flows, market access, and the rules of the digital economy — carried from Capitol Hill briefings to global coalition outcomes.</p></article>
+        <article class="focus reveal"><span class="tag">Breadth</span><h3>Cybersecurity</h3><p>Secure-infrastructure standards and coalition-led campaigns on the policy that protects networks and supply chains.</p></article>
+        <article class="focus reveal"><span class="tag">Breadth</span><h3>Digital Infrastructure</h3><p>The connectivity and compute layer beneath the digital economy — where investment, policy, and development converge.</p></article>
+        <article class="focus reveal"><span class="tag diff">Differentiator</span><h3>U.S.–Africa Cooperation</h3><p>Sub-Saharan Africa expertise and trilingual fluency as the edge no corporate-only peer can match — the base the whole T is built on.</p></article>
+        <article class="focus reveal"><span class="tag">Base</span><h3>U.S. Federal Process</h3><p>How Washington actually works — legislative strategy, the interagency, and Senate-confirmation-grade credibility built by design.</p></article>
+      </div>
+    </div></section>
+
+    <!-- TRAJECTORY -->
+    <section id="trajectory" class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">The Arc</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">2026 → 2058+</span>
+      </div>
+      <div class="arc">
+        <div class="arc-item reveal"><div class="arc-when">2026</div><div class="arc-body"><div class="arc-phase">Phase 1 · Year 0</div><h3 class="arc-title">FLEX Internship</h3><p class="arc-focus">Earn the return offer, secure a first sponsor, and deliver Right to Repair with a quantified result.</p><span class="arc-comp">Intern</span></div></div>
+        <div class="arc-item reveal"><div class="arc-when">2026–27</div><div class="arc-body"><div class="arc-phase">Phase 2</div><h3 class="arc-title">MBA Year Two</h3><p class="arc-focus">Lock the return offer, gap-driven coursework in negotiations and geopolitics, and launch an international writing voice.</p><span class="arc-comp">Student</span></div></div>
+        <div class="arc-item reveal"><div class="arc-when">2027–30</div><div class="arc-body"><div class="arc-phase">Phase 3</div><h3 class="arc-title">FLEX Rising Leaders — Rotations</h3><p class="arc-focus">State Government Affairs, Country Digital Acceleration (Africa), and Federal GA carrying an international file.</p><span class="arc-comp">$150K–$200K</span></div></div>
+        <div class="arc-item reveal"><div class="arc-when">2030–36</div><div class="arc-body"><div class="arc-phase">Phase 4</div><h3 class="arc-title">Specialist → Director Track</h3><p class="arc-focus">Owned policy wins, first people leadership, and the near-mandatory Senate-confirmed government-service stint.</p><span class="arc-comp">$250K–$500K</span></div></div>
+        <div class="arc-item reveal"><div class="arc-when">2036–41</div><div class="arc-body"><div class="arc-phase">Phase 5</div><h3 class="arc-title">Vice President</h3><p class="arc-focus">A federal and international portfolio, coalition leadership at scale, 50–100 direct and indirect reports.</p><span class="arc-comp">$600K–$1M</span></div></div>
+        <div class="arc-item reveal"><div class="arc-when">2041–48</div><div class="arc-body"><div class="arc-phase">Phase 6</div><h3 class="arc-title">SVP Positioning &amp; Landing</h3><p class="arc-focus">Enterprise policy strategy, team building, and visible succession readiness before the seat opens.</p><span class="arc-comp">$1.5M–$3M+</span></div></div>
+        <div class="arc-item dest reveal"><div class="arc-when">2046–54</div><div class="arc-body"><div class="arc-phase">Phase 7 · Destination</div><h3 class="arc-title">Chief Government Affairs Officer</h3><p class="arc-focus">The destination role — policy engagement across six continents, held six to ten years, building the external statesman profile and a published book.</p><span class="arc-comp">$3M–$6M+</span></div></div>
+        <div class="arc-item reveal"><div class="arc-when">2054–58</div><div class="arc-body"><div class="arc-phase">Phase 8</div><h3 class="arc-title">Diplomatic Encore</h3><p class="arc-focus">A political-appointment ambassadorship in the technology and digital-policy space — two to four years.</p><span class="arc-comp">$180K–$220K</span></div></div>
+        <div class="arc-item reveal"><div class="arc-when">2058+</div><div class="arc-body"><div class="arc-phase">Phase 9</div><h3 class="arc-title">Boards &amp; Teaching</h3><p class="arc-focus">Two to four boards, a professor-of-practice appointment, and writing — sustainable into the 70s.</p><span class="arc-comp">$300K–$800K portfolio</span></div></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="band"><div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">04</span>
         <h2 class="sec-title">Experience</h2>
         <span class="sec-rule"></span>
+        <span class="sec-note">Foundation</span>
       </div>
 
       <article class="role reveal">
-        <div class="meta">
-          <span class="dates">May 2026 — Present</span>
-          <span class="loc">Chicago, IL</span>
-        </div>
+        <div class="meta"><span class="dates">May 2026 — Present</span><span class="loc">Chicago, IL</span></div>
         <div class="body">
           <h3 class="org">Cisco</h3>
           <p class="title">FLEX Rising Leaders Program — Government Affairs</p>
-          <ul>
-            <li>Selected for FLEX, a leadership-development program that grows high-potential MBA and master's talent into key leadership roles across the company.</li>
-          </ul>
+          <ul><li>Selected for FLEX, a leadership-development program that grows high-potential MBA and master's talent into key leadership roles — beginning in State Government Affairs on right-to-repair legislation.</li></ul>
         </div>
       </article>
 
       <article class="role reveal">
-        <div class="meta">
-          <span class="dates">Jul 2024 — Jul 2025</span>
-          <span class="loc">Washington, D.C.</span>
-        </div>
+        <div class="meta"><span class="dates">Jul 2024 — Jul 2025</span><span class="loc">Washington, D.C.</span></div>
         <div class="body">
           <h3 class="org">Congressional Research Service</h3>
           <p class="org-desc">The research and advisory arm of the U.S. Congress</p>
@@ -306,10 +413,7 @@
       </article>
 
       <article class="role reveal">
-        <div class="meta">
-          <span class="dates">Dec 2023 — Jul 2024</span>
-          <span class="loc">Washington, D.C.</span>
-        </div>
+        <div class="meta"><span class="dates">Dec 2023 — Jul 2024</span><span class="loc">Washington, D.C.</span></div>
         <div class="body">
           <h3 class="org">Information Technology Industry Council (ITI)</h3>
           <p class="org-desc">A global technology-industry trade association</p>
@@ -322,10 +426,7 @@
       </article>
 
       <article class="role reveal">
-        <div class="meta">
-          <span class="dates">Sep 2020 — Sep 2022</span>
-          <span class="loc">Washington, D.C.</span>
-        </div>
+        <div class="meta"><span class="dates">Sep 2020 — Sep 2022</span><span class="loc">Washington, D.C.</span></div>
         <div class="body">
           <h3 class="org">The Economist Intelligence Unit</h3>
           <p class="org-desc">The research and advisory arm of The Economist</p>
@@ -336,78 +437,140 @@
           </ul>
         </div>
       </article>
+    </div></section>
+
+    <!-- LANDING ZONES -->
+    <section id="zones" class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">Landing Zones</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">Optionality by design</span>
+      </div>
+      <div class="zones">
+        <article class="zone primary reveal"><div class="zhead"><span class="badge">A</span><span class="ztitle">Cisco SVP — Campbell Succession</span></div><span class="zwindow">2044–2048</span><p class="zdesc">The primary target. The CGAO landing in its Cisco form, aligned with the rotation strategy and the mentor arc.</p><span class="ztag">Primary target</span></article>
+        <article class="zone reveal"><div class="zhead"><span class="badge">B</span><span class="ztitle">Peer-Company CGAO Lateral</span></div><span class="zwindow">2042–2048</span><p class="zdesc">Microsoft, IBM, Apple, or Alphabet — a true C-suite policy seat. Compounds with Zone A rather than competing.</p><span class="ztag">Compounds A</span></article>
+        <article class="zone reveal"><div class="zhead"><span class="badge">C</span><span class="ztitle">Senate-Confirmed Federal Role</span></div><span class="zwindow">2032–36 · 2040–44</span><p class="zdesc">State Cyberspace &amp; Digital Policy, NTIA, USTR digital trade, or NIST AI. The plan of record — closes the international operating-experience gap.</p><span class="ztag">Plan of record</span></article>
+        <article class="zone reveal"><div class="zhead"><span class="badge">D</span><span class="ztitle">Ambassador / Ambassador-at-Large</span></div><span class="zwindow">2054 onward</span><p class="zdesc">The encore centerpiece — a tech-diplomacy portfolio, a bilateral post in a strategic partner country, or a Special Envoy role.</p><span class="ztag">Encore primary</span></article>
+        <article class="zone reveal"><div class="zhead"><span class="badge">E</span><span class="ztitle">Multilateral Leadership</span></div><span class="zwindow">2054 onward</span><p class="zdesc">ITU, OECD digital policy, or a UN Tech Envoy office. Africa expertise and French fluency are genuine differentiators.</p><span class="ztag">Encore alternative</span></article>
+        <article class="zone reveal"><div class="zhead"><span class="badge">F</span><span class="ztitle">Cabinet / Sub-Cabinet</span></div><span class="zwindow">Post-CGAO</span><p class="zdesc">Commerce, Deputy Secretary of State for the digital portfolio, or USTR. Treated as upside, not plan.</p><span class="ztag">Upside</span></article>
+        <article class="zone reveal"><div class="zhead"><span class="badge">G</span><span class="ztitle">Association / Institution CEO</span></div><span class="zwindow">2050 onward</span><p class="zdesc">ITI, TechNet, or a major foundation or think-tank presidency — a softer encore that preserves Washington influence.</p><span class="ztag">Encore alternative</span></article>
+        <article class="zone reveal" style="border-top-color: var(--line); background: var(--paper-2);"><div class="zhead"><span class="badge" style="border-color: var(--line); color: var(--muted);">↔</span><span class="ztitle">Cross-Zone Logic</span></div><p class="zdesc">GA and CDA depth maximizes A and B. Federal credentialing maximizes C, D, and F. The Africa and multilateral thread maximizes D, E, and G. Nothing is wasted.</p></article>
+      </div>
     </section>
 
-    <section id="education">
+    <!-- ENCORE -->
+    <section id="encore" class="band"><div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-num">02</span>
+        <span class="sec-num">06</span>
+        <h2 class="sec-title">The Encore</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">Sequenced, then parallel</span>
+      </div>
+      <div class="encore-grid">
+        <article class="track reveal"><span class="tnum">Track 1</span><h3>Diplomatic Appointment</h3><span class="twhen">~2054–2058</span><p>The appointment path, not the Foreign Service ladder. Ambassador-at-Large for tech and digital policy first; a bilateral post in Sub-Saharan Africa or a European tech capital second. Built, not lucked into.</p></article>
+        <article class="track reveal"><span class="tnum">Track 2</span><h3>Board Portfolio</h3><span class="twhen">Begin ~2050 · full weight 2058+</span><p>A first public-company board seat while still CGAO, then a steady state of two to three company boards plus one or two mission boards. Never more than four fiduciary seats at once.</p></article>
+        <article class="track reveal"><span class="tnum">Track 3</span><h3>Teaching</h3><span class="twhen">Guest 2040s · professor 2058+</span><p>Professor of practice in technology policy and diplomacy — SAIS, UCLA, or a peer school. The book is the credential; the classroom is the legacy vehicle.</p></article>
+      </div>
+    </div></section>
+
+    <!-- ROADMAP -->
+    <section id="roadmap" class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">07</span>
+        <h2 class="sec-title">Skills Roadmap</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">Proof points</span>
+      </div>
+      <div class="tshape reveal">
+        <span class="depth">Depth · AI governance</span>
+        <span class="depth">Depth · Digital trade</span>
+        <span class="breadth">Federal process</span>
+        <span class="breadth">Sub-Saharan Africa</span>
+        <span class="breadth">Cybersecurity</span>
+        <span class="breadth">Coalitions</span>
+        <span class="breadth">People leadership</span>
+      </div>
+      <div class="roadmap-wrap reveal">
+        <table class="roadmap">
+          <thead><tr><th>Skill</th><th>How it gets built</th><th>Proof point by</th></tr></thead>
+          <tbody>
+            <tr><td class="skill">Policy craft</td><td class="how">Rotations — tracking, stakeholder mapping, executive memos under deadline.</td><td class="proof">2030 · 3 host teams</td></tr>
+            <tr><td class="skill">AI governance depth</td><td class="how">State AI policy, federal, AI-for-development, and ongoing OECD / multilateral engagement.</td><td class="proof">2036 · recognized authority</td></tr>
+            <tr><td class="skill">International operating</td><td class="how">CDA Africa rotation, a mandated international file, and the Zone C government stint.</td><td class="proof">2036 · ministerial record</td></tr>
+            <tr><td class="skill">People leadership</td><td class="how">First reports by 2032, 50–100 by VP, a 200–500 organization by SVP.</td><td class="proof">2041 · promoted reports</td></tr>
+            <tr><td class="skill">Coalition leadership</td><td class="how">Right to Repair now, an integrated campaign by Year 6, a global coalition by Year 12.</td><td class="proof">2044 · multi-country win</td></tr>
+            <tr><td class="skill">Diplomatic comms</td><td class="how">Executive briefings now, media training by VP, head-of-state rooms by CGAO.</td><td class="proof">2048 · any room</td></tr>
+            <tr><td class="skill">Commercial fluency</td><td class="how">MBA P&amp;L course, business-partner rotations, CGAO budget ownership.</td><td class="proof">2044 · credible with CFO</td></tr>
+            <tr><td class="skill">Governance literacy</td><td class="how">Nonprofit boards from 2030, audit-committee training, first public board 2050–52.</td><td class="proof">2052 · board-ready</td></tr>
+            <tr><td class="skill">Teaching &amp; writing</td><td class="how">One piece / year to 2030, quarterly to 2036, a book by 2050, guest teaching from the 2040s.</td><td class="proof">2050 book · 2058 chair</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- NETWORK -->
+    <section id="network" class="band"><div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">08</span>
+        <h2 class="sec-title">Network Architecture</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">Five tiers</span>
+      </div>
+      <div class="tiers">
+        <div class="tier reveal"><span class="tl">A</span><span class="tname">Mentors &amp; Patrons</span><p class="tdesc">Multi-decade patronage built through rotations — State GA, CDA, and Federal GA leadership — plus issue-depth mentors in cybersecurity and international policy.</p></div>
+        <div class="tier reveal"><span class="tl">B</span><span class="tname">Peer Networks</span><p class="tdesc">Anderson 2027, Riordan and Consortium Fellows, SAIS, CRS and ITI alumni. In fifteen years, the appointment network is largely this tier grown up.</p></div>
+        <div class="tier reveal"><span class="tl">C</span><span class="tname">Diplomatic &amp; Federal Policy</span><p class="tdesc">CFR, the Aspen Strategy Group orbit, OECD and Global Partnership on AI, State digital-policy alumni, and the small community of tech ambassadors.</p></div>
+        <div class="tier reveal"><span class="tl">D</span><span class="tname">Community &amp; Identity</span><p class="tdesc">Nigerian American and African-diaspora organizations, the National Black MBA Association, faith community. Load-bearing — this tier is who you are.</p></div>
+        <div class="tier reveal"><span class="tl">E</span><span class="tname">Governance Network</span><p class="tdesc">Sitting directors met through CGAO work, board search firms, and the corporate secretaries and general counsels who drive board recruitment.</p></div>
+      </div>
+    </div></section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">09</span>
         <h2 class="sec-title">Education</h2>
         <span class="sec-rule"></span>
       </div>
       <div class="edu-grid">
         <article class="edu reveal">
-          <div>
-            <h3 class="school">UCLA Anderson School of Management</h3>
-            <p class="degree">M.B.A., Full-Time Program — Concentrations: Strategy, Global Management &amp; Technology</p>
-          </div>
-          <div>
-            <div class="when">June 2027</div>
-            <div class="where">Los Angeles, CA</div>
-          </div>
+          <div><h3 class="school">UCLA Anderson School of Management</h3><p class="degree">M.B.A., Full-Time Program — Concentrations: Strategy, Global Management &amp; Technology</p></div>
+          <div><div class="when">June 2027</div><div class="where">Los Angeles, CA</div></div>
           <div class="notes">
             <div class="note"><span>Honors</span>Consortium Fellow · Riordan Fellow · Golub Capital Board Fellow</div>
             <div class="note"><span>Leadership</span>Partner, Anderson Strategy Group · VP Industry Education, AnderTech</div>
           </div>
         </article>
-
         <article class="edu reveal">
-          <div>
-            <h3 class="school">Johns Hopkins — School of Advanced International Studies</h3>
-            <p class="degree">M.A., International Relations (Technology &amp; African Affairs) · M.A., Economics</p>
-          </div>
-          <div>
-            <div class="when">May 2024</div>
-            <div class="where">Washington, D.C.</div>
-          </div>
+          <div><h3 class="school">Johns Hopkins — School of Advanced International Studies</h3><p class="degree">M.A., International Relations (Technology &amp; African Affairs) · M.A., Economics</p></div>
+          <div><div class="when">May 2024</div><div class="where">Washington, D.C.</div></div>
           <div class="notes">
             <div class="note"><span>Honors</span>Magna Cum Laude</div>
             <div class="note"><span>Leadership</span>Student Body President · VP, SAIS Africa Club · Director of Policy, SAIS Technology Club</div>
           </div>
         </article>
-
         <article class="edu reveal">
-          <div>
-            <h3 class="school">University of California, Los Angeles</h3>
-            <p class="degree">B.A., Political Science / Global Health</p>
-          </div>
-          <div>
-            <div class="when">September 2020</div>
-            <div class="where">Los Angeles, CA</div>
-          </div>
-          <div class="notes">
-            <div class="note"><span>Honors</span>Chancellor's Service Award</div>
-          </div>
+          <div><h3 class="school">University of California, Los Angeles</h3><p class="degree">B.A., Political Science / Global Health</p></div>
+          <div><div class="when">September 2020</div><div class="where">Los Angeles, CA</div></div>
+          <div class="notes"><div class="note"><span>Honors</span>Chancellor's Service Award</div></div>
         </article>
       </div>
     </section>
 
-    <section id="capabilities">
+    <!-- ANCHORS -->
+    <section id="anchors" class="band"><div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-num">03</span>
-        <h2 class="sec-title">Capabilities &amp; Interests</h2>
+        <span class="sec-num">10</span>
+        <h2 class="sec-title">Capabilities &amp; Anchors</h2>
         <span class="sec-rule"></span>
+        <span class="sec-note">What the career is worth having for</span>
       </div>
       <div class="cap-grid">
         <div class="cap reveal">
           <h3>Skills &amp; Tools</h3>
           <div class="chips">
-            <span class="chip">Strategic policy analysis</span>
-            <span class="chip">Stakeholder engagement</span>
-            <span class="chip">Financial modeling</span>
-            <span class="chip">Excel</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Python</span>
-            <span class="chip">LexisNexis</span>
+            <span class="chip">Strategic policy analysis</span><span class="chip">Stakeholder engagement</span><span class="chip">Financial modeling</span><span class="chip">Negotiation</span><span class="chip">Excel</span><span class="chip">SQL</span><span class="chip">Python</span><span class="chip">LexisNexis</span>
           </div>
         </div>
         <div class="cap reveal">
@@ -415,21 +578,45 @@
           <div class="lang">
             <div class="row"><span class="name">English</span><span class="level">Native</span></div>
             <div class="row"><span class="name">Igbo</span><span class="level">Native</span></div>
-            <div class="row"><span class="name">French</span><span class="level">Intermediate</span></div>
+            <div class="row"><span class="name">French</span><span class="level">Intermediate · live career asset</span></div>
             <div class="row"><span class="name">Swahili</span><span class="level">Novice</span></div>
           </div>
         </div>
         <div class="cap reveal">
-          <h3>Beyond Work</h3>
+          <h3>Identity &amp; Interests</h3>
           <div class="chips">
-            <span class="chip">Rare-book collecting</span>
-            <span class="chip">Weight training</span>
-            <span class="chip">Sports analytics</span>
-            <span class="chip">Documentaries</span>
-            <span class="chip">Anime</span>
-            <span class="chip">Tea</span>
-            <span class="chip">Podcasting</span>
+            <span class="chip">Nigerian American</span><span class="chip">Igbo heritage</span><span class="chip">Strength &amp; conditioning</span><span class="chip">Rare-book collecting</span><span class="chip">Political biography</span><span class="chip">Anime</span><span class="chip">Cooking</span><span class="chip">Tea</span><span class="chip">Fashion</span>
           </div>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- PRINCIPLES -->
+    <section id="principles" class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">11</span>
+        <h2 class="sec-title">Principles &amp; Non-Negotiables</h2>
+        <span class="sec-rule"></span>
+      </div>
+      <div class="pv-grid">
+        <div class="pv principles reveal">
+          <h3>Four principles for the long arc</h3>
+          <ol>
+            <li><b>Build the platform before deploying it.</b> Everything before the encore is accumulation; deploy deliberately.</li>
+            <li><b>Protect the T.</b> AI governance and digital trade depth, on a federal and African base. Depth is what makes every zone want you.</li>
+            <li><b>Every transition is a relationship event.</b> From 2032 onward, the encore is decided by people who remember you from twenty years earlier.</li>
+            <li><b>Stay rooted.</b> Identity, family, faith, Igbo and French fluency, the hobbies. Quietly, these are also the qualifications.</li>
+          </ol>
+        </div>
+        <div class="pv values reveal">
+          <h3>Values</h3>
+          <ul>
+            <li><b>Substantive integrity.</b> Take positions because you believe them — a diplomat's word is the entire asset.</li>
+            <li><b>Family and faith first.</b> Three decades of climbing consume whatever is not actively protected.</li>
+            <li><b>Health as infrastructure.</b> Training, nutrition, sleep, mental health. Non-negotiable.</li>
+            <li><b>Truthfulness as default.</b> The leaders who hold up over decades default to the truth.</li>
+            <li><b>Community over self.</b> The career is a platform; the service, boards, and classroom are what it's for.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -437,7 +624,7 @@
 
   <footer id="contact">
     <div class="wrap foot reveal">
-      <h2>Let's talk strategy,<br />technology &amp; <span class="k">Africa's</span> digital future.</h2>
+      <h2>Let's talk strategy, technology &amp; <span class="k">Africa's</span> digital future.</h2>
       <div class="foot-links">
         <a href="mailto:kosi.ogbuli.2027@anderson.ucla.edu"><span class="arw">→</span> Email</a>
         <a href="https://linkedin.com/in/kosixogbuli" target="_blank" rel="noopener"><span class="arw">→</span> LinkedIn</a>
@@ -448,14 +635,14 @@
     <div class="colophon">
       <div class="wrap">
         <span>Onyebuchi (Kosi) Ogbuli</span>
-        <span>Los Angeles · Washington, D.C.</span>
+        <span>Life Plan v2026.11 · Review Jan 2027</span>
+        <span>Bay Area · Washington, D.C.</span>
       </div>
     </div>
   </footer>
 
 <script>
 (function () {
-  /* ---- Theme toggle ---- */
   var root = document.documentElement;
   var btn = document.getElementById('themeToggle');
   function current() {
@@ -463,12 +650,10 @@
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
   btn.addEventListener('click', function () {
-    var next = current() === 'dark' ? 'light' : 'dark';
-    root.dataset.theme = next;
+    root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
     draw();
   });
 
-  /* ---- Scroll reveal ---- */
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var items = document.querySelectorAll('.reveal');
   if (reduce || !('IntersectionObserver' in window)) {
@@ -482,17 +667,11 @@
     items.forEach(function (el) { io.observe(el); });
   }
 
-  /* ---- Hero topographic isolines ---- */
   var canvas = document.getElementById('iso');
   var ctx = canvas.getContext('2d');
-  var W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
-  var phase = 0;
-
-  function brandColor() {
-    return getComputedStyle(root).getPropertyValue('--brand').trim() || '#12564e';
-  }
+  var W = 0, H = 0, dpr = Math.min(window.devicePixelRatio || 1, 2), phase = 0;
+  function brandColor() { return getComputedStyle(root).getPropertyValue('--brand').trim() || '#12564e'; }
   function isDark() { return current() === 'dark'; }
-
   function size() {
     var r = canvas.getBoundingClientRect();
     W = r.width; H = r.height;
@@ -500,46 +679,32 @@
     canvas.height = Math.max(1, Math.floor(H * dpr));
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   }
-
   function draw() {
     if (!W || !H) return;
     ctx.clearRect(0, 0, W, H);
-    var color = brandColor();
-    var lines = 16;
-    var alpha = isDark() ? 0.22 : 0.16;
+    var color = brandColor(), lines = 16, alpha = isDark() ? 0.22 : 0.16;
     ctx.lineWidth = 1;
     for (var i = 0; i < lines; i++) {
-      var t = i / lines;
-      var baseY = H * (0.12 + t * 1.05);
+      var t = i / lines, baseY = H * (0.12 + t * 1.05);
       ctx.beginPath();
       ctx.strokeStyle = color;
       ctx.globalAlpha = alpha * (1 - t * 0.45);
       for (var x = -20; x <= W + 20; x += 8) {
-        var y = baseY
-          + Math.sin(x * 0.006 + phase + i * 0.55) * (26 + i * 3)
-          + Math.sin(x * 0.013 - phase * 0.6 + i) * (10 + i * 1.5);
+        var y = baseY + Math.sin(x * 0.006 + phase + i * 0.55) * (26 + i * 3) + Math.sin(x * 0.013 - phase * 0.6 + i) * (10 + i * 1.5);
         if (x === -20) ctx.moveTo(x, y); else ctx.lineTo(x, y);
       }
       ctx.stroke();
     }
     ctx.globalAlpha = 1;
   }
-
   var running = !reduce;
-  function loop() {
-    if (!running) return;
-    phase += 0.0016;
-    draw();
-    requestAnimationFrame(loop);
-  }
-
-  function init() { size(); draw(); if (running) loop(); }
+  function loop() { if (!running) return; phase += 0.0016; draw(); requestAnimationFrame(loop); }
   window.addEventListener('resize', function () { size(); draw(); });
   document.addEventListener('visibilitychange', function () {
-    if (document.hidden) { running = false; }
+    if (document.hidden) running = false;
     else if (!reduce) { running = true; loop(); }
   });
-  init();
+  size(); draw(); if (running) loop();
 })();
 </script>
 </body>
