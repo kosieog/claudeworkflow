@@ -258,6 +258,23 @@
   .pv.values li::before { content: ""; position: absolute; left: .3rem; top: .55em; width: 8px; height: 8px; background: var(--brand); transform: rotate(45deg); }
   @media (max-width: 700px) { .pv-grid { grid-template-columns: 1fr; } }
 
+  /* ---------- Notes / financial / life ---------- */
+  .lead-note { font-family: var(--serif); font-size: 1.1rem; color: var(--ink-soft); max-width: 60ch; margin: 0 0 1.6rem; line-height: 1.5; }
+  .lead-note b { color: var(--ink); }
+  .note-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .note-card { background: var(--card); border: 1px solid var(--line); padding: 1.5rem; display: flex; flex-direction: column; gap: .5rem; }
+  .note-card.hl { border-left: 3px solid var(--accent); }
+  .note-card .nlab { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); }
+  .note-card h3 { font-family: var(--serif); font-size: 1.18rem; font-weight: 600; margin: 0; line-height: 1.2; }
+  .note-card p { margin: 0; color: var(--ink-soft); font-size: .93rem; line-height: 1.58; }
+  .note-card .fig { font-family: var(--mono); font-size: .74rem; color: var(--brand); letter-spacing: .02em; }
+  @media (max-width: 820px) { .note-grid { grid-template-columns: 1fr; } }
+
+  /* Decision-points table reuses .roadmap; these scope the tweaks */
+  table.roadmap.decisions td.dwhen { font-family: var(--mono); font-size: .76rem; color: var(--accent-ink); white-space: nowrap; }
+  table.roadmap.decisions td b { font-family: var(--serif); font-weight: 600; color: var(--ink); font-size: 1.02rem; }
+  table.roadmap.decisions td.q { color: var(--ink-soft); font-size: .92rem; line-height: 1.5; }
+
   /* ---------- Footer ---------- */
   footer { border-top: 1px solid var(--line); background: var(--paper-2); }
   .foot { padding: clamp(3rem, 7vw, 5rem) 0; display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: end; }
@@ -286,6 +303,7 @@
         <a class="navlink" href="#trajectory">Trajectory</a>
         <a class="navlink" href="#experience">Experience</a>
         <a class="navlink" href="#roadmap">Roadmap</a>
+        <a class="navlink" href="future.html">2066</a>
         <a class="cta" href="mailto:kosi.ogbuli.2027@anderson.ucla.edu">Get in touch</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">Theme</button>
       </div>
@@ -518,7 +536,7 @@
         <span class="sec-note">Five tiers</span>
       </div>
       <div class="tiers">
-        <div class="tier reveal"><span class="tl">A</span><span class="tname">Mentors &amp; Patrons</span><p class="tdesc">Multi-decade patronage built through rotations — State GA, CDA, and Federal GA leadership — plus issue-depth mentors in cybersecurity and international policy.</p></div>
+        <div class="tier reveal"><span class="tl">A</span><span class="tname">Mentors &amp; Patrons</span><p class="tdesc">Wright-Conn is position one — a multi-decade investment. Diedrich (CDA) and Isaac (Federal GA) added through rotations; Campbell as senior GA mentor; Macy Andrews via FLEX and Mike Brown through the BBSA ecosystem. Eric Wenger (cybersecurity) and Pastora Valero (international GA) as issue-depth mentors; Katsoudas exposure through cross-3P work by the early 2030s.</p></div>
         <div class="tier reveal"><span class="tl">B</span><span class="tname">Peer Networks</span><p class="tdesc">Anderson 2027, Riordan and Consortium Fellows, SAIS, CRS and ITI alumni. In fifteen years, the appointment network is largely this tier grown up.</p></div>
         <div class="tier reveal"><span class="tl">C</span><span class="tname">Diplomatic &amp; Federal Policy</span><p class="tdesc">CFR, the Aspen Strategy Group orbit, OECD and Global Partnership on AI, State digital-policy alumni, and the small community of tech ambassadors.</p></div>
         <div class="tier reveal"><span class="tl">D</span><span class="tname">Community &amp; Identity</span><p class="tdesc">Nigerian American and African-diaspora organizations, the National Black MBA Association, faith community. Load-bearing — this tier is who you are.</p></div>
@@ -526,10 +544,88 @@
       </div>
     </div></section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="wrap">
+    <!-- DECISION POINTS -->
+    <section id="decisions" class="wrap">
       <div class="sec-head reveal">
         <span class="sec-num">09</span>
+        <h2 class="sec-title">Decision Points</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">Inflection years</span>
+      </div>
+      <div class="roadmap-wrap reveal">
+        <table class="roadmap decisions">
+          <thead><tr><th>When</th><th>Decision</th><th>Key question</th></tr></thead>
+          <tbody>
+            <tr><td class="dwhen">Aug 2026</td><td><b>Cisco return offer</b></td><td class="q">Did Right to Repair and the Summer Sprint land? Is Wright-Conn a durable patron? Default: accept.</td></tr>
+            <tr><td class="dwhen">Spring 2027</td><td><b>Rotation 1</b></td><td class="q">Stay with Wright-Conn on State GA (default) or an alternative.</td></tr>
+            <tr><td class="dwhen">Spring 2028</td><td><b>Rotation 2</b></td><td class="q">CDA Africa under Diedrich (default) — the rotation that makes the tech-diplomat claim real.</td></tr>
+            <tr><td class="dwhen">Spring 2029</td><td><b>Rotation 3</b></td><td class="q">Federal GA under Isaac with a mandated international file (default).</td></tr>
+            <tr><td class="dwhen">2030–32</td><td><b>Bay Area home</b></td><td class="q">A life-quality decision. East Bay leading hypothesis. No district math.</td></tr>
+            <tr><td class="dwhen">2032–36</td><td><b>Government service stint</b></td><td class="q">Which agency, which administration window. Plan of record: take it.</td></tr>
+            <tr><td class="dwhen">2036</td><td><b>VP promotion gate</b></td><td class="q">Cisco climb (default) or a Zone B lateral. Reset every four years.</td></tr>
+            <tr><td class="dwhen">2041</td><td><b>SVP positioning</b></td><td class="q">Campbell succession, CDA succession, or a peer lateral.</td></tr>
+            <tr><td class="dwhen">2044–48</td><td><b>CGAO landing</b></td><td class="q">Zone A or Zone B. Take the true C-suite version of the seat.</td></tr>
+            <tr><td class="dwhen">2050–52</td><td><b>First public board seat</b></td><td class="q">Which company, which committee. Employer approval secured.</td></tr>
+            <tr><td class="dwhen">2052–54</td><td><b>Encore sequencing</b></td><td class="q">Ambassador window vs. Zone E multilateral vs. Zone G bridge. Administration timing decides order.</td></tr>
+            <tr><td class="dwhen">2058+</td><td><b>Portfolio life</b></td><td class="q">Board mix, professorship home, second book, fellowship launch.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FINANCIAL -->
+    <section id="financial" class="band"><div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">10</span>
+        <h2 class="sec-title">Financial Architecture</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">Independence by ~2044</span>
+      </div>
+      <p class="lead-note reveal">The campaign war chest is deleted — the old <b>$10M–$50M</b> self-funding target is gone, which materially lowers the required terminal net worth and removes the single largest distortion in the plan. What replaces it:</p>
+      <div class="note-grid">
+        <article class="note-card hl reveal"><span class="nlab">Planned step-downs</span><h3>Two income dips, both survivable</h3><p>The Zone C government stint and the ambassador encore. Pre-fund each with liquid reserves equal to the income gap.</p><span class="fig">2032–36 · ~$130K–$220K &nbsp;/&nbsp; 2054–58 · ~$180K–$220K</span></article>
+        <article class="note-card reveal"><span class="nlab">Milestone</span><h3>Financial independence</h3><p>By the SVP years, roughly 2044, work becomes fully chosen, not needed.</p><span class="fig">~2044</span></article>
+        <article class="note-card reveal"><span class="nlab">Encore income</span><h3>Self-sustaining portfolio</h3><p>Board portfolio plus teaching, speaking, and book income — comfortably self-sustaining without touching principal.</p><span class="fig">$300K–$800K / yr</span></article>
+        <article class="note-card reveal"><span class="nlab">Real estate</span><h3>Home, sized to life</h3><p>First Bay Area home 2030–2033; a DC pied-à-terre when comp supports it.</p><span class="fig">Home equity ≤ 30% of net worth by CGAO</span></article>
+        <article class="note-card reveal"><span class="nlab">Family</span><h3>Intergenerational obligations</h3><p>Nigerian American flows built in explicitly: parent support, extended family, and eventually the named fellowship as the structured giving vehicle.</p></article>
+        <article class="note-card reveal"><span class="nlab">Deployment</span><h3>Philanthropy over politics</h3><p>Replaces political giving as the signature capital deployment: education, African digital inclusion, and diaspora leadership development.</p></article>
+      </div>
+    </div></section>
+
+    <!-- RISK -->
+    <section id="risk" class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">11</span>
+        <h2 class="sec-title">Risk Management</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">Survive a two-year pause at any point</span>
+      </div>
+      <div class="pv-grid">
+        <div class="pv values reveal">
+          <h3>Career risks &amp; hedges</h3>
+          <ul>
+            <li><b>Cisco institutional risk.</b> The 20-year climb depends on Cisco's health — hedge through warm Zone B relationships at Microsoft, IBM, Apple, and Alphabet from the VP years.</li>
+            <li><b>Seat-timing risk.</b> The Campbell seat may not open in window. Hedge: Zones B and G, plus the Zone C stint, which makes a mid-career external move stronger, not weaker.</li>
+            <li><b>Promotion velocity.</b> Stalled more than two cycles at any tier — evaluate laterals seriously.</li>
+            <li><b>Appointment-cycle risk.</b> Zones C, D, and F depend on who holds the White House. Mitigate with bipartisan credibility, relationships across both parties, Zone E/G alternatives, and patience.</li>
+            <li><b>Confirmation &amp; vetting.</b> Keep a clean quarter-century record: a clean digital footprint, CRS-style factual writing without partisan polemic, documented rationale for the Cisco positions you shape, and a clear personal position on legacy Cisco controversies (Doe v. Cisco, historical China allegations) developed early and held with integrity.</li>
+          </ul>
+        </div>
+        <div class="pv values reveal">
+          <h3>Personal risks</h3>
+          <ul>
+            <li><b>Aging parents &amp; family emergencies.</b> Build slack into every phase.</li>
+            <li><b>A partner's career.</b> An overseas posting is a family decision years before it is a career decision.</li>
+            <li><b>Health events.</b> The plan should survive a two-year pause at any point without collapsing — a design requirement, not a hope.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="band"><div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">12</span>
         <h2 class="sec-title">Education</h2>
         <span class="sec-rule"></span>
       </div>
@@ -556,15 +652,15 @@
           <div class="notes"><div class="note"><span>Honors</span>Chancellor's Service Award</div></div>
         </article>
       </div>
-    </section>
+    </div></section>
 
-    <!-- ANCHORS -->
-    <section id="anchors" class="band"><div class="wrap">
+    <!-- CAPABILITIES -->
+    <section id="capabilities" class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-num">10</span>
-        <h2 class="sec-title">Capabilities &amp; Anchors</h2>
+        <span class="sec-num">13</span>
+        <h2 class="sec-title">Capabilities</h2>
         <span class="sec-rule"></span>
-        <span class="sec-note">What the career is worth having for</span>
+        <span class="sec-note">Skills · languages · interests</span>
       </div>
       <div class="cap-grid">
         <div class="cap reveal">
@@ -583,18 +679,36 @@
           </div>
         </div>
         <div class="cap reveal">
-          <h3>Identity &amp; Interests</h3>
+          <h3>Interests</h3>
           <div class="chips">
-            <span class="chip">Nigerian American</span><span class="chip">Igbo heritage</span><span class="chip">Strength &amp; conditioning</span><span class="chip">Rare-book collecting</span><span class="chip">Political biography</span><span class="chip">Anime</span><span class="chip">Cooking</span><span class="chip">Tea</span><span class="chip">Fashion</span>
+            <span class="chip">Rare-book collecting</span><span class="chip">Political biography</span><span class="chip">Sports analytics</span><span class="chip">Documentaries</span><span class="chip">Anime</span><span class="chip">Cooking</span><span class="chip">Tea</span><span class="chip">Fashion</span><span class="chip">Podcasting</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- LIFE & IDENTITY -->
+    <section id="life" class="band"><div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-num">14</span>
+        <h2 class="sec-title">Life, Health &amp; Identity</h2>
+        <span class="sec-rule"></span>
+        <span class="sec-note">A marathon with no off-season</span>
+      </div>
+      <div class="note-grid">
+        <article class="note-card reveal"><span class="nlab">Physical</span><h3>Training as infrastructure</h3><p>Hybrid training — lifting plus conditioning — vegetarian nutrition planned around travel, 7–8 hours of sleep, disciplined caffeine and alcohol, and annual physical, dental, and mental-health check-ins. Non-negotiable.</p></article>
+        <article class="note-card reveal"><span class="nlab">Mental</span><h3>Guarding against burnout</h3><p>Executive and diplomatic careers carry high burnout and isolation rates. Standing therapy or coaching, a daily reflective practice, and a small circle of friends unconnected to ambition.</p></article>
+        <article class="note-card hl reveal"><span class="nlab">Identity</span><h3>The foundation and the asset</h3><p>Nigerian American identity is the personal foundation and, in the diplomatic lane, a professional asset that can't be manufactured later. Maintain Igbo fluency, invest in Nigeria family relationships, keep French sharp. Faith and values protected.</p></article>
+        <article class="note-card reveal"><span class="nlab">Relationships &amp; family</span><h3>Protected on their own terms</h3><p>Regular calls, visits, and honored milestones. Partnership and family formation navigated on their own terms — joy and meaning, not a strategic variable. An overseas posting is a family decision years before it is a career decision.</p></article>
+        <article class="note-card reveal"><span class="nlab">Friendships</span><h3>Unconnected to ambition</h3><p>Three to five close friendships kept deliberately across decades — the people who have nothing to do with the climb.</p></article>
+        <article class="note-card reveal"><span class="nlab">Intellectual life</span><h3>Forty books a year</h3><p>Diplomatic memoirs and statecraft, AI-governance literature, African political economy, and negotiation — plus a daily private writing habit that becomes the public cadence and, eventually, the books.</p></article>
       </div>
     </div></section>
 
     <!-- PRINCIPLES -->
-    <section id="principles" class="wrap">
+    <section id="principles" class="band"><div class="wrap">
       <div class="sec-head reveal">
-        <span class="sec-num">11</span>
+        <span class="sec-num">15</span>
         <h2 class="sec-title">Principles &amp; Non-Negotiables</h2>
         <span class="sec-rule"></span>
       </div>
@@ -619,7 +733,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </div></section>
   </main>
 
   <footer id="contact">
@@ -630,6 +744,7 @@
         <a href="https://linkedin.com/in/kosixogbuli" target="_blank" rel="noopener"><span class="arw">→</span> LinkedIn</a>
         <a href="tel:+14155746134"><span class="arw">→</span> (415) 574-6134</a>
         <a href="Kosi_Ogbuli_Resume.pdf" target="_blank" rel="noopener"><span class="arw">↓</span> Résumé (PDF)</a>
+        <a href="future.html"><span class="arw">→</span> An imagined future · 2066</a>
       </div>
     </div>
     <div class="colophon">
@@ -651,8 +766,10 @@
   }
   btn.addEventListener('click', function () {
     root.dataset.theme = current() === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('ko-theme', root.dataset.theme); } catch (e) {}
     draw();
   });
+  try { var saved = localStorage.getItem('ko-theme'); if (saved) root.dataset.theme = saved; } catch (e) {}
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var items = document.querySelectorAll('.reveal');
